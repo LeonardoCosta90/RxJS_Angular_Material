@@ -3,7 +3,7 @@ import { from } from "rxjs";
 let numbers = [1,5,10];
 let source = from(numbers);
 
-class myObserver {
+class MyObserver {
   next(x: number) {
     console.log(x)
   }
@@ -16,7 +16,7 @@ class myObserver {
 }
 
 function component() {
-  source.subscribe(new myObserver)
+  source.subscribe(new MyObserver)
 }
 
 component()
